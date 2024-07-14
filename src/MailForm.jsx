@@ -34,7 +34,7 @@ function MailForm() {
     const errors = validateForm();
     if (Object.keys(errors).length === 0) {
       try {
-        await axios.post('http://localhost:8080/send', { to, subject, text });
+        await axios.post('https://mailsender-fuue.onrender.com/send', { to, subject, text });
         alert('Email sent successfully!');
         resetForm();
       } catch (error) {
