@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151719;
+  display: flex;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 200px;
+}
+
+h1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 60px;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent; /* Hides the actual text fill */
+  -webkit-text-fill-color: transparent; /* For older WebKit-based browsers */
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.input-container {
+  margin-bottom: 1rem;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: aliceblue;
+}
+
+.input-container input,
+.input-container textarea {
+  width: 80%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.input-container input:hover,
+.input-container textarea:hover {
+  box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.263); 
+}
+
+.input-container input.error,
+.input-container textarea.error {
+  border-color: #dc3545;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 0.5rem;
+}
+
+form {
+  background-color: rgb(11, 9, 9);
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 5px 5px 20px rgb(154, 148, 148);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+button {
+  width: 100px;
+  padding: 10px;
+  background-color: rgb(255, 2, 2);
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+  background-color: rgb(60, 232, 21);
+  box-shadow: 3px 3px 10px rgb(38, 217, 14);
+}
